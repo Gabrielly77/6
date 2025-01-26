@@ -32,6 +32,7 @@ img {
   --text-color: hsl(0 0% 46%);
   --text-color-light: hsl(0 0% 98%);
   --body-color: hsl(0 0% 98%);
+  --dark-green: #008000; /* Verde mais escuro */
 
   /* fonts */
   --title-font-size: 1.875rem;
@@ -485,12 +486,16 @@ footer .container {
 
 footer .logo {
   font: 700 1.31rem var(--title-font);
-  color: var(--text-color-light);
+  color: black; /* Texto "FELIZ" em preto */
   margin-bottom: 1.5rem;
 }
 
-footer .logo span {
-  color: var(--text-color-light);
+footer .logo .niver {
+  color: white; /* Texto "NIVER" em branco */
+}
+
+footer .logo .momo {
+  color: var(--dark-green); /* Texto "MOMO" em verde mais escuro */
 }
 
 footer .brand p {
