@@ -51,6 +51,7 @@ body {
   color: var(--text-color);
   background: var(--body-color);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden; /* Previene o overflow horizontal */
 }
 
 .title {
@@ -467,6 +468,7 @@ footer {
   background: var(--base-color);
   width: 100%; /* Garante que o footer cubra toda a largura da tela */
   padding: 4rem 0; /* Adiciona padding para espaços internos */
+  overflow: hidden; /* Previene overflow horizontal */
 }
 
 footer .container {
