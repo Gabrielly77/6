@@ -466,13 +466,10 @@ nav.show div.icon-close {
 footer {
   background: var(--base-color);
   width: 100%; /* Garante que o footer cubra toda a largura da tela */
-  padding: 4rem 0; /* Adiciona padding para espaços internos */
+  padding: 4rem 1.5rem; /* Adiciona padding para espaços internos */
 }
 
 footer .container {
-  max-width: 1120px; /* Limita a largura máxima do conteúdo do rodapé */
-  margin: 0 auto; /* Centraliza o conteúdo do rodapé */
-  padding: 0 1.5rem; /* Adiciona padding nas laterais */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -626,5 +623,53 @@ footer .social a:hover {
 
   /* services */
   .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 
+  .card {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
 
+  /* testimonials */
+  #testimonials .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* contact */
+  #contact .container {
+    grid-auto-flow: column;
+    align-items: center;
+  }
+
+  #contact .text {
+    max-width: 25rem;
+  }
+
+  /* footer */
+  footer.section {
+    padding: 3.75rem 0;
+  }
+
+  footer .container {
+    grid-auto-flow: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  footer .logo {
+    font-size: 2.25rem;
+  }
+}
+
+/* large devices: 1023 > */
+/* large devices: 992 > */
+@media (min-width: 992px) {
+  :root {
+    --title-font-size: 2.25rem;
+    --subtitle-font-size: 1.125rem;
+  }
+}
+
+/* medium devices: 767 > */
