@@ -467,44 +467,20 @@ nav.show div.icon-close {
 /*====  FOOTER ============================ */
 footer {
   background: var(--base-color);
-  width: 100%; /* Garante que o footer cubra toda a largura da tela */
-  padding: 4rem 0; /* Adiciona padding para espaços internos */
-  overflow: hidden; /* Previene overflow horizontal */
 }
 
-footer .container {
-  width: 100%; /* Garante que o container cubra toda a largura do rodapé */
-  max-width: 1200px; /* Limita a largura máxima do conteúdo do rodapé */
-  margin: 0 auto; /* Centraliza o conteúdo do rodapé */
-  padding: 0 1.5rem; /* Adiciona padding nas laterais */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center; /* Centraliza o texto */
+footer.section {
+  padding: 4rem 0;
 }
 
 footer .logo {
-  font: 700 1.31rem var(--title-font);
-  color: black; /* Texto "FELIZ" em preto */
+  display: inline-block;
   margin-bottom: 1.5rem;
-}
-
-footer .logo .niver {
-  color: white; /* Texto "NIVER" em branco */
-}
-
-footer .logo .momo {
-  color: var(--dark-green); /* Texto "MOMO" em verde mais escuro */
 }
 
 footer .brand p {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
-}
-
-footer .brand p:last-child {
-  margin-bottom: 0; /* Remove o espaço inferior do último parágrafo */
 }
 
 footer i {
@@ -513,9 +489,8 @@ footer i {
 }
 
 footer .social {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
+  grid-auto-flow: column;
+  width: fit-content;
 }
 
 footer .social a {
@@ -526,7 +501,6 @@ footer .social a {
 footer .social a:hover {
   transform: translateY(-8px);
 }
-
 /* Back to top */
 .back-to-top {
   background: var(--base-color);
