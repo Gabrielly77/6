@@ -25,8 +25,8 @@ img {
   /* colors */
   --hue: 159;
   /* HSL color mode */
-  --base-color: #00ff00 ;
-  --base-color-second:  #00ff00 ;
+  --base-color: #00ff00;
+  --base-color-second: #00ff00;
   --base-color-alt: hsl(var(--hue) 57% 53%);
   --title-color: hsl(var(--hue) 41% 10%);
   --text-color: hsl(0 0% 46%);
@@ -465,10 +465,15 @@ nav.show div.icon-close {
 /*====  FOOTER ============================ */
 footer {
   background: var(--base-color);
+  width: 100%; /* Garante que o footer cubra toda a largura da tela */
+  padding: 4rem 1.5rem; /* Adiciona padding para espaços internos */
 }
 
-footer.section {
-  padding: 4rem 0;
+footer .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 footer .logo {
@@ -476,9 +481,16 @@ footer .logo {
   margin-bottom: 1.5rem;
 }
 
+footer .brand {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
 footer .brand p {
   color: var(--text-color-light);
-  margin-bottom: 0.75rem;
+  margin-left: 1rem;
+  text-align: left;
 }
 
 footer i {
@@ -487,8 +499,9 @@ footer i {
 }
 
 footer .social {
-  grid-auto-flow: column;
-  width: fit-content;
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
 }
 
 footer .social a {
@@ -649,6 +662,7 @@ footer .social a:hover {
     font-size: 2.25rem;
   }
 }
+
 /* large devices: 1023 > */
 /* large devices: 992 > */
 @media (min-width: 992px) {
@@ -657,4 +671,5 @@ footer .social a:hover {
     --subtitle-font-size: 1.125rem;
   }
 }
+
 /* medium devices: 767 > */
