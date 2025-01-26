@@ -490,12 +490,16 @@ footer .logo {
 }
 
 footer .logo span {
-  color: var(--base-color);
+  color: var(--text-color-light);
 }
 
 footer .brand p {
   color: var(--text-color-light);
   margin-bottom: 0.75rem;
+}
+
+footer .brand p:last-child {
+  margin-bottom: 0; /* Remove o espaço inferior do último parágrafo */
 }
 
 footer i {
